@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['8000-runabrandes-pp5elegante-22s6c8233xi.ws.codeinstitute-ide.
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.8000-runabrandes-pp5elegante-22s6c8233xi.ws.codeinstitute-ide.net',
+    'https://*.elegant-essentials-1b55310ae644.herokuapp.com/',
 ]
 
 # Application definition
