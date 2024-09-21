@@ -31,6 +31,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-runabrandes-pp5elegante-22s6c8233xi.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.8000-runabrandes-pp5elegante-22s6c8233xi.ws.codeinstitute-ide.net',
+]
 
 # Application definition
 
@@ -83,6 +86,11 @@ TEMPLATES = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
 WSGI_APPLICATION = 'elegant_essentials.wsgi.application'
 
 
@@ -132,6 +140,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
