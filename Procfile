@@ -1,0 +1,1 @@
+web: gunicorn elegant_essentials.wsgi
