@@ -36,7 +36,7 @@
     </div>
     {% endif %}
 
-    <!--Header and Navbar-->
+    <!--Navbar-->
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -56,7 +56,7 @@
                         <li class="nav-item">
                             <a class="nav-link
                       {% if request.path == shop_url %}active" aria-current="page{% endif %}"
-                                href="{% url 'shop' %}">Shop</a>
+                                href="{% url 'shop' %}">Shop <i class="fa-solid fa-basket-shopping"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
