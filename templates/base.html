@@ -38,9 +38,9 @@
 
     <!--Navbar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light mainnav text-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{% url 'home' %}">Elegant Essentials</a>
+                <a class="navbar-brand" href="{% url 'home' %}"><strong>Elegant Essentials</strong></a>
                 <button class="navbar-toggler bg-light navbar-btn" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -76,6 +76,11 @@
                 </div>
             </div>
         </nav>
+        <div class="ro bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-start justify-content-md-center w-100">
+                {% include 'includes/categories_nav.html' %}
+            </nav>
+        </div>
     </header>
 
     <main class="justify-content-center">

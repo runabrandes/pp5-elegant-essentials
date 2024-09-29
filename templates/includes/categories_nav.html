@@ -1,0 +1,20 @@
+<div class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-light py-2">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item me-3">
+                    <a class="nav-link {% if request.path == 'shop_url' %}active{% endif %}" 
+                       href="{% url 'shop' %}">All Products</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link {% if request.path == 'face_products_url' %}active{% endif %}"
+                       href="">Face Products</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link {% if request.path == 'hair_products_url' %}active{% endif %}"
+                       href="">Hair Products</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -18,3 +18,7 @@ p {
 .btn {
     background-color: rgb(34, 25, 43);
 }
+
+li {
+    font-family: 'Playfair Display', sans-serif;  
+}
