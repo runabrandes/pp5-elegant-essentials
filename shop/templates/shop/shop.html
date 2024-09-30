@@ -11,21 +11,66 @@
     <div class="col col-10 ">
         <form method="GET" action="">
             <div class="input-group">
-                <input type="text" class="form-control" name="q" placeholder="Search for products"
-                    aria-label="Search">
+                <input type="text" class="form-control" name="q" placeholder="Search for products" aria-label="Search">
                 <div class="input-group-append">
-                    <button class="btn btn-dark text-white btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                    <button class="btn btn-dark text-white btn-outline-secondary" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i> Search</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{ products }}
+<div class="container-fluid">
+    <div class="row product-container col-12 justify-content-center">
+        {% for product in products %}
+        <div class="col-sm-6 col-md-4 col-lg-3"> 
+            <div class="card h-100 border-0">
+                {% if product.image %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.product_name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{% static 'path/to/noimage.png' %}" alt="{{ product.product_name }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-0">
+                    <p class="mb-0">{{ product.product_name }}</p>
+                </div>
+                <div class="card-footer bg-white pt-0 border-0 text-left">
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                </div>
+            </div>
         </div>
+
+        {% if forloop.counter|divisibleby:1 %}
+        <div class="col-12 d-sm-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:4 %}
+        <div class="col-12 d-none d-xl-block mb-5">
+            <hr>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        {% if products|length == 0 %}
+        <div class="col-12">
+            <p>No products available.</p>
+        </div>
+        {% endif %}
     </div>
 </div>
 
