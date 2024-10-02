@@ -8,11 +8,11 @@
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link {% if request.path == 'face_products_url' %}active{% endif %}"
-                       href="">Face Products</a>
+                       href="{% url 'shop' %}?category=skin_products">Face Products</a>
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link {% if request.path == 'hair_products_url' %}active{% endif %}"
-                       href="">Hair Products</a>
+                       href="{% url 'shop' %}?category=hair_products">Hair Products</a>
                 </li>
             </ul>
         </div>
