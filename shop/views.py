@@ -29,6 +29,15 @@ def shop(request):
             queries = Q(product_name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+        sort = request.GET.get('sort')
+        direction = request.GET.get('direction')
+
+        if sort == 'price':
+            if direction == 'asc':
+                products = products.order_by('price')
+            elif direction == 'desc':
+                products = products.order_by('-price')
+
     context = {
         'products': products,
         'search_term': query,
