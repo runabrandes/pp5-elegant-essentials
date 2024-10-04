@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block includes %}
+<div class="row bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-start justify-content-md-center w-100">
+        {% include 'includes/categories_nav.html' %}
+    </nav>
+</div>
+{% endblock %}
+
+
 {% block page_header %}
 <h1 class="m-3"><strong>Shop</strong></h1>
 {% endblock %}
