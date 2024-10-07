@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
+from django.contrib.auth.decorators import login_required
 
 def bag(request):
     """
@@ -7,6 +8,7 @@ def bag(request):
     """
     return render(request, 'bag/bag.html')
 
+@login_required
 def add_to_bag(request, product_id):
     """ Add a specified quantity of a selected product to the bag """
 
