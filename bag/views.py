@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 
 def bag(request):
     """
@@ -27,14 +28,14 @@ def add_to_bag(request, product_id):
 
 def update_bag(request, product_id):
     """Update quantity of a selected product in the bag """
-    
+
     redirect_url = request.POST.get('redirect_url')
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
 
     if quantity > 0:
             bag[product_id] = quantity
-    else:
+    elif product_id in bag:
         bag.pop(product_id)
 
     request.session['bag'] = bag

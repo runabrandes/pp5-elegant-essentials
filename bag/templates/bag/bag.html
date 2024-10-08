@@ -98,17 +98,17 @@
 {% block postloadjs %}
 <script type="text/javascript">
     // Update quantity of item on click
-    $('.update-item').click(function (e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
+    $(document).on('click', '.update-item', function (e) {
+    e.preventDefault();
+    $(this).closest('.update-container').find('.update-form').submit();
+    });
 
     // Remove item from bag and reload on click
     $(document).on('click', '.remove-item', function (e) {
         e.preventDefault();
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/bag/remove/${itemId}`;
+        var url = "{% url 'remove_from_bag' '' %}" + itemId;
         var data = {
             'csrfmiddlewaretoken': csrfToken,
             'product_id': itemId
