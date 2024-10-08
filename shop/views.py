@@ -24,10 +24,13 @@ def shop(request):
             query = request.GET['q']
             if not query:
                 messages.error(request, 'Please enter a search criteria!')
-                return redirect(reverse('products'))
+                return redirect(reverse('shop'))
             
             queries = Q(product_name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+
+            if not products.exists():
+                messages.info(request, 'No products found for your search.')
 
         sort = request.GET.get('sort')
         direction = request.GET.get('direction')

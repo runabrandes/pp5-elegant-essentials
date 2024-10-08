@@ -22,3 +22,8 @@ p {
 li {
     font-family: 'Playfair Display', sans-serif;  
 }
+
+.update-item,
+.remove-item {
+    cursor: pointer;
+}
