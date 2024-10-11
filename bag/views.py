@@ -26,6 +26,7 @@ def add_to_bag(request, product_id):
     return redirect(redirect_url)
 
 
+@login_required
 def update_bag(request, product_id):
     """Update quantity of a selected product in the bag """
 
@@ -42,6 +43,7 @@ def update_bag(request, product_id):
     return redirect(redirect_url)
 
 
+@login_required
 def remove_from_bag(request, product_id):
     """Remove selected item from the bag"""
 
