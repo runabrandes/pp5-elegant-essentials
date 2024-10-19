@@ -31,9 +31,13 @@
 <body>
 
     {% if messages %}
-    <div class="messages">
-
+    {% for message in messages %}
+    <div class="alert {{ message.tags }} alert-dismissible
+        fade show" id="msg" role="alert">
+        {{ message | safe }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+    {% endfor %}
     {% endif %}
 
     <!--Navbar-->
@@ -59,8 +63,9 @@
                                 href="{% url 'shop' %}">Shop <i class="fa-solid fa-basket-shopping"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == profiles_url %}active" aria-current="page{% endif %}"
-                                href="{% url 'profile' %}">My Profile</a>
+                            <a class="nav-link {% if request.path == profiles_url %}active"
+                                aria-current="page{% endif %}" href="{% url 'profile' %}">My Profile <i
+                                    class="fa-solid fa-user"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
@@ -113,7 +118,8 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/7c10daa828.js" crossorigin="anonymous"></script>
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!--Stripe JS-->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
