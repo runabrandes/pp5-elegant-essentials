@@ -10,7 +10,7 @@ h1, h2 {
     font-style: italic;
 }
 
-p {
+p, li, td, ul {
     padding: 10px;
     font-family: 'Nanum Gothic', sans-serif;
     }
