@@ -113,6 +113,14 @@
 
     </main>
 
+    {% if "newsletter/" not in request.path and "profile" not in request.path %}
+    <footer>
+        <div id="newsletter-signup-button">
+            <p>Click here to sign up to our newsletter!</p>
+            <a href="{% url 'newsletter_signup' %}" class="shop-btn btn btn-dark text-white">Subscribe</a>
+        </div>
+    </footer>
+    {% endif %}
 
     {% block corejs %}
     <!--Bootstrap JS-->

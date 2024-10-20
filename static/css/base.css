@@ -2,6 +2,7 @@
 
 body {
     background-color: #ffebeb;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -26,4 +27,10 @@ li {
 .update-item,
 .remove-item {
     cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+    text-align: right;
+    padding: 10px;
 }
