@@ -81,6 +81,10 @@
                                 href="{% url 'account_login' %}">Account Login</a>
                         </li>
                         {% endif %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == contact %}active" aria-current="page{% endif %}"
+                                href="{% url 'contact' %}">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
