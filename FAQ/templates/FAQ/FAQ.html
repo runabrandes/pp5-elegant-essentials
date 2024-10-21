@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mt-5">
+            <h2>FAQ Page</h2>
+            <hr>
+            <p>Please find Frequently Asked Questions below!</p>
+            <div class="col-md-12">
+                {% for faq in faqs_page %} 
+                <br>
+                <details>
+                    <summary>
+                        <strong>{{ faq.question }}</strong>
+                    </summary>
+                    <p>{{ faq.answer }}</p>
+                    <hr>
+                </details>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
