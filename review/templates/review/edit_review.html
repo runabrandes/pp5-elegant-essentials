@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-3">
+    <h2>Edit Review</h2>
+    <p>Please note, your review will require authorisation again once it has been updated!</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ review_form|crispy }}
+        <button type="submit" class="btn btn-dark text-white">Update Review</button>
+        <a href="{% url 'review_overview' %}" class="btn btn-dark text-whit">Cancel</a>
+    </form>
+</div>
+{% endblock content %}

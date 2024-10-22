@@ -23,7 +23,7 @@ def reviews(request):
         else:
             for field, errors in reviews_form.errors.items():
                 for error in errors:
-                    messages.error(request, f"{error}")
+                    messages.ERROR(request, f"{error}")
 
     reviews_form = ReviewForm()
 
@@ -48,3 +48,24 @@ class ReviewListView(ListView):
 
         return context
 
+
+def edit_review(request, review_id):
+    """
+    View to edit reviews.
+    """
+    review = get_object_or_404(Review, pk=review_id)
+
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST, instance=review)
+        if review_form.is_valid() and review.name == request.user:
+            review = review_form.save(commit=False)
+            review.review_approved = False
+            review.save()
+            messages.add_message(request, messages.SUCCESS, 'Review Updated! Please wait whilst we approve it.')
+        else:
+            messages.add_message(request, messages.ERROR, 'Could not update review!')
+        return HttpResponseRedirect(reverse('review_overview'))
+    else:
+        review_form = ReviewForm(instance=review)
+
+    return render(request, 'review/edit_review.html', {'review_form': review_form, 'review': review})
