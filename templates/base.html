@@ -71,6 +71,10 @@
                             <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
                                 href="{% url 'account_logout' %}">Account Logout</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == reviews %}active" aria-current="page{% endif %}"
+                                href="{% url 'reviews' %}">Leave A Review</a>
+                        </li>
                         {% else %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
@@ -86,7 +90,11 @@
                                 href="{% url 'contact' %}">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == faq_q_and_a%}active" aria-current="page{% endif %}"
+                            <a class="nav-link {% if request.path == review_overview %}active" aria-current="page{% endif %}"
+                                href="{% url 'review_overview' %}">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == faq_q_and_a %}active" aria-current="page{% endif %}"
                                 href="{% url 'faq_q_and_a' %}">FAQs</a>
                         </li>
                     </ul>
