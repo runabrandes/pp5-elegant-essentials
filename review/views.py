@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from django.views.generic import ListView
 from .models import Review
 from .forms import ReviewForm
@@ -18,7 +19,7 @@ def reviews(request):
             reviews_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                "Many thanks for leaving your review!")
+                "Many thanks for leaving your review! It will be approved shortly.")
         else:
             for field, errors in reviews_form.errors.items():
                 for error in errors:
@@ -31,3 +32,19 @@ def reviews(request):
         'review/review.html',
         {'reviews_form': reviews_form},
     )
+
+ 
+class ReviewListView(ListView):
+    """
+    View to output and filter reviews.
+    """
+    model = Review
+    context_object_name = 'reviews'
+    template_name = 'review/review_overview.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['review'] = self.get_queryset()
+
+        return context
+

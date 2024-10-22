@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 card mb-4 mt-3">
+    <h2>Reviews:</h2>
+    <div class="card-body">
+      {% for review in reviews %}
+      <hr>
+      <div class="p-2
+          {% if not review.review_approved and review.name == user %}
+          faded{% elif not review.review_approved %} d-none {% endif %}">
+        <p class="fw-bold">
+          {{ review.name }}
+          <span>
+            ({{ review.date }})
+          </span> wrote:
+        </p>
+        <div id="review{{ review.id }}">
+          {{ review.review | linebreaks }}
+        </div>
+        {% if not review.review_approved and review.name == user %}
+        <p class="text-muted fst-italic">
+          This review is awaiting approval
+        </p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}
