@@ -24,6 +24,7 @@
         </div>
         {% if review.name == user %}
         <a href="{% url 'edit_review' review.id %}" class="btn btn-secondary btn-sm">Edit</a>
+        <a href="{% url 'delete_review' review.id %}" class="btn btn-delete btn-danger btn-sm">Delete</a>
         {% endif %}
         {% if not review.review_approved and review.name == user %}
         <p class="text-muted fst-italic">

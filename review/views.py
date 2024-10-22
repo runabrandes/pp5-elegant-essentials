@@ -23,7 +23,7 @@ def reviews(request):
         else:
             for field, errors in reviews_form.errors.items():
                 for error in errors:
-                    messages.ERROR(request, f"{error}")
+                    messages.error(request, f"{error}")
 
     reviews_form = ReviewForm()
 
@@ -36,7 +36,7 @@ def reviews(request):
  
 class ReviewListView(ListView):
     """
-    View to output and filter reviews.
+    View to output reviews.
     """
     model = Review
     context_object_name = 'reviews'
@@ -69,3 +69,18 @@ def edit_review(request, review_id):
         review_form = ReviewForm(instance=review)
 
     return render(request, 'review/edit_review.html', {'review_form': review_form, 'review': review})
+
+
+def delete_review(request, review_id):
+    """
+    View to delete a review.
+    """
+    review = get_object_or_404(Review, pk=review_id)
+
+    if review.name == request.user:
+        review.delete()
+        messages.add_message(request, messages.SUCCESS, 'Your review has been deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You are not authorised to delete this review.')
+
+    return HttpResponseRedirect(reverse('review_overview'))
