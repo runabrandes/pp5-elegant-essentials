@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
-    background-color: rgb(252, 215, 223);
+    background-color: #ffebeb;
+    height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p, li, td, ul {
+    padding: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    }
+
+.btn {
+    background-color: rgb(34, 25, 43);
+}
+
+li {
+    font-family: 'Playfair Display', sans-serif;  
+}
+
+.update-item,
+.remove-item {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+    text-align: right;
+    padding: 10px;
 }
