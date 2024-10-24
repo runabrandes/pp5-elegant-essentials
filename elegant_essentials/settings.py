@@ -173,7 +173,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if 'USE_AWS' in os.environ:
+if os.environ.get('USE_AWS') == 'True':
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'elegant-essentials'
     AWS_S3_REGION_NAME = 'eu-north-1'
