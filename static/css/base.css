@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #ffebeb;
     height: 100vh;
+}
+
+.wrapper {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 100px;
 }
 
 h1, h2 {
@@ -36,7 +50,7 @@ footer {
 }
 
 #social {
-    list-style-type: none;
+    list-style: none;
     height: 10vh;
     width: 100%;
     margin-bottom: 0px;
