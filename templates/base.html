@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
+
     <!--Link to Favicon-->
     <link rel="icon" href="{{ MEDIA_URL }}shopping-bag.png">
     {% endblock %}
@@ -89,16 +89,16 @@
                         </li>
                         {% endif %}
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}"
-                                href="{% url 'contact' %}">Contact Us</a>
+                            <a class="nav-link {% if request.path == contact_url %}active"
+                                aria-current="page{% endif %}" href="{% url 'contact' %}">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == review_overview %}active" aria-current="page{% endif %}"
-                                href="{% url 'review_overview' %}">Reviews</a>
+                            <a class="nav-link {% if request.path == review_overview %}active"
+                                aria-current="page{% endif %}" href="{% url 'review_overview' %}">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == faq_q_and_a %}active" aria-current="page{% endif %}"
-                                href="{% url 'faq_q_and_a' %}">FAQs</a>
+                            <a class="nav-link {% if request.path == faq_q_and_a %}active"
+                                aria-current="page{% endif %}" href="{% url 'faq_q_and_a' %}">FAQs</a>
                         </li>
                     </ul>
                 </div>
@@ -130,9 +130,25 @@
 
     {% if "newsletter/" not in request.path and "profile" not in request.path %}
     <footer>
-        <div id="newsletter-signup-button">
-            <p>Click here to sign up to our newsletter!</p>
-            <a href="{% url 'newsletter_signup' %}" class="shop-btn btn btn-dark text-white">Subscribe</a>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center"> 
+                    <div class="fb">
+                        <ul id="social" class="mb-0"> 
+                            <li>
+                                <a href="https://en-gb.facebook.com/" target="_blank" rel="noopener"
+                                   aria-label="Visit our Facebook page! (opens in new tab)">
+                                    <i class="fa-brands fa-square-facebook" style="color: #1a77f2;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="newsletter-signup-button" class="text-end">
+                        <p>Click here to sign up to our newsletter!</p>
+                        <a href="{% url 'newsletter_signup' %}" class="shop-btn btn btn-dark text-white">Subscribe</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     {% endif %}
