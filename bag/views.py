@@ -3,11 +3,13 @@ from django.views import generic
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 
+
 def bag(request):
     """
     This view renders bag.html
     """
     return render(request, 'bag/bag.html')
+
 
 @login_required
 def add_to_bag(request, product_id):
@@ -35,7 +37,7 @@ def update_bag(request, product_id):
     bag = request.session.get('bag', {})
 
     if quantity > 0:
-            bag[product_id] = quantity
+        bag[product_id] = quantity
     elif product_id in bag:
         bag.pop(product_id)
 
@@ -49,7 +51,7 @@ def remove_from_bag(request, product_id):
 
     try:
         bag = request.session.get('bag', {})
-        if product_id in bag:   
+        if product_id in bag:
             bag.pop(product_id)
 
             request.session['bag'] = bag

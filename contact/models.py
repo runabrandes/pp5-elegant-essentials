@@ -11,7 +11,7 @@ class Contact(models.Model):
     email = models.EmailField(max_length=254, blank=False)
     comment = models.TextField(blank=False)
     date = models.DateTimeField(auto_now_add=True)
-    
+
     def __str__(self):
         return (f"{self.name} sent a request on {self.date}."
                 + f"They can be reached at {self.email}.")

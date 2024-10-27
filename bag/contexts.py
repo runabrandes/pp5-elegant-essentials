@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from shop.models import Product
 
+
 def bag_contents(request):
     bag = request.session.get('bag', {})
     bag_items = []

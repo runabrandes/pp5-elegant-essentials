@@ -5,11 +5,10 @@ from .models import Contact
 from .forms import ContactForm
 
 
-
 def contact_request(request):
     """
     This view processes POST requests related to
-    sending contact requests to the shop. On a POST request, 
+    sending contact requests to the shop. On a POST request,
     it validates the submitted form, saves it,
     and associates it with the active user.
     """
