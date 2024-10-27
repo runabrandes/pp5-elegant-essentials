@@ -16,11 +16,11 @@ def reviews(request):
         if reviews_form.is_valid():
             review = reviews_form.save(commit=False)
             review.name = request.user
-            reviews_form.save()
+            review.save()
             messages.add_message(
                 request, messages.SUCCESS,
                 "Many thanks for leaving your review!"
-                "It will be approved shortly.")
+                " It will be approved shortly.")
         else:
             for field, errors in reviews_form.errors.items():
                 for error in errors:
@@ -63,7 +63,7 @@ def edit_review(request, review_id):
             review.review_approved = False
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review Updated!'
-                                 'Please wait whilst we approve it.')
+                                 ' Please wait whilst we approve it.')
         else:
             messages.add_message(request, messages.ERROR,
                                  'Could not update review!')

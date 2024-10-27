@@ -15,10 +15,6 @@ body {
     flex-direction: column;
 }
 
-footer {
-    height: 100px;
-}
-
 h1, h2 {
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
@@ -45,8 +41,10 @@ li {
 
 footer {
     background-color: #fff;
-    text-align: right;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
 }
 
 #social {

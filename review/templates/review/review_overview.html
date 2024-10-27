@@ -4,7 +4,7 @@
 {% block content %}
 <div class="row justify-content-center">
   <div class="col-md-8 card mb-4 mt-3">
-    <h2>Reviews:</h2>
+    <h2 class="m-2">Reviews:</h2>
     <div class="card-body">
       {% for review in reviews %}
       {% if review.review_approved or review.name == user %}
@@ -35,5 +35,8 @@
       {% endfor %}
     </div>
   </div>
+  {% if user.is_authenticated %}
+  <a href="{% url 'reviews' %}" class="shop-btn btn btn-dark text-white">Leave A Review</a>
+  {% endif %}
 </div>
 {% endblock content %}
