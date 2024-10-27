@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import NewsletterForm
 
+
 def newsletter_signup(request):
     if request.method == 'POST':
         newsletter_form = NewsletterForm(request.POST)
@@ -15,7 +16,8 @@ def newsletter_signup(request):
     else:
         newsletter_form = NewsletterForm()
 
-    return render(request, 'newsletter/newsletter.html', {'newsletter_form': newsletter_form})
+    return render(request, 'newsletter/newsletter.html',
+                  {'newsletter_form': newsletter_form})
 
 
 def newsletter_success(request):

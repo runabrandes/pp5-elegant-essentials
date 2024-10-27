@@ -6,10 +6,10 @@ from .models import Review
 from .forms import ReviewForm
 
 
-
 def reviews(request):
     """
-    This view processes post request when users leave reviews for the shop. 
+    This view processes post request when users leave
+    reviews for the shop.
     """
     if request.method == "POST":
         reviews_form = ReviewForm(data=request.POST)
@@ -19,7 +19,8 @@ def reviews(request):
             reviews_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                "Many thanks for leaving your review! It will be approved shortly.")
+                "Many thanks for leaving your review!"
+                "It will be approved shortly.")
         else:
             for field, errors in reviews_form.errors.items():
                 for error in errors:
@@ -33,7 +34,7 @@ def reviews(request):
         {'reviews_form': reviews_form},
     )
 
- 
+
 class ReviewListView(ListView):
     """
     View to output reviews.
@@ -61,14 +62,17 @@ def edit_review(request, review_id):
             review = review_form.save(commit=False)
             review.review_approved = False
             review.save()
-            messages.add_message(request, messages.SUCCESS, 'Review Updated! Please wait whilst we approve it.')
+            messages.add_message(request, messages.SUCCESS, 'Review Updated!'
+                                 'Please wait whilst we approve it.')
         else:
-            messages.add_message(request, messages.ERROR, 'Could not update review!')
+            messages.add_message(request, messages.ERROR,
+                                 'Could not update review!')
         return HttpResponseRedirect(reverse('review_overview'))
     else:
         review_form = ReviewForm(instance=review)
 
-    return render(request, 'review/edit_review.html', {'review_form': review_form, 'review': review})
+    return render(request, 'review/edit_review.html',
+                  {'review_form': review_form, 'review': review})
 
 
 def delete_review(request, review_id):
@@ -79,8 +83,10 @@ def delete_review(request, review_id):
 
     if review.name == request.user:
         review.delete()
-        messages.add_message(request, messages.SUCCESS, 'Your review has been deleted!')
+        messages.add_message(request, messages.SUCCESS,
+                             'Your review has been deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You are not authorised to delete this review.')
+        messages.add_message(request, messages.ERROR,
+                             'You are not authorised to delete this review.')
 
     return HttpResponseRedirect(reverse('review_overview'))
