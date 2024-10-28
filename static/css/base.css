@@ -9,6 +9,14 @@ body {
     height: 100vh;
 }
 
+.alert.error {
+    background-color: red;
+}
+
+.alert.success {
+    background-color: green;
+}
+
 .wrapper {
     min-height: calc(100vh - 100px);
     display: flex;
@@ -58,3 +66,4 @@ footer {
 #social i {
     font-size: 300%;
 }
+
