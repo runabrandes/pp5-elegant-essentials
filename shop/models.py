@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Category(models.Model):
+    """
+    Model representing a product category.
+    """
     category_name = models.CharField(max_length=100)
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
 
@@ -13,6 +16,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model representing a product itself.
+    """
     category = (
         models.ForeignKey('Category', null=True, blank=True,
                           on_delete=models.SET_NULL)

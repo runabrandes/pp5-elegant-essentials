@@ -4,6 +4,9 @@ from .forms import NewsletterForm
 
 
 def newsletter_signup(request):
+    """
+    View handling the newsletter signup form submit.
+    """
     if request.method == 'POST':
         newsletter_form = NewsletterForm(request.POST)
         if newsletter_form.is_valid():

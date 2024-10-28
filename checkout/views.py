@@ -18,6 +18,9 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Data for the stripe checkout process..
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -142,7 +145,7 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """"
-    Function to handle successful checkout
+    Function to handle successful checkout. 
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
