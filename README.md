@@ -19,8 +19,8 @@ When planning the project the most important features to me were:
 1. Welcoming homepage
 2. Good selection of products
 3. User-friendly interface
-4. Product descriptions and intersting product images
-5. Simple design to allow users to navigate the website easily
+4. Product descriptions and interesting product images
+5. Simple design to allow users to navigate the website seamlessly
 6. Search functionality to help users find products easily
 7. Contact form for customers
 8. Search bar to allow customers to find certain products quickly
@@ -46,7 +46,7 @@ Furthermore, they can view contact requests that might have been sent to the sto
 
 To plan the User Stories for this project I have created a Kanban board in Github which can be viewed [here](https://github.com/users/runabrandes/projects/4).
 
-**Agile Methodology** was used throughout the project and "issues" moved on the Kanban board according to what was being worked on at the time. As user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress** to **Done**. A row for **Future Implementations** was added as well, which currently holds 3 items, that are not yet implemented, but would be beneficial features the website could have in the future.
+**Agile Methodology** was used throughout the project and "issues" moved on the Kanban board according to what was being worked on at the time. As user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress** to **Done**. A row for **Future Implementations** was added as well, which currently holds 3 items, that are not yet implemented but would be beneficial features the website could have in the future.
 **MoSCoW** was also used for this project to help prioritise implementation of features.
 
 #
@@ -135,3 +135,37 @@ This is achieved by using similar styling and colour schemes throughout the webs
 
 #
 
+
+### Website Structure
+
+The website is designed with the user in mind, the goal being to make the website attractive to potential customers. Users that have not signed up /logged in have access to:
+- Home
+- Shop 
+- Product Descriptions (unable to add items to basket)
+- Create Account
+- Account Login
+- Reviews
+- Contact Us
+- FAQs page
+- Newsletter sign up page
+
+Once users are logged in, they have access to:
+- Home
+- Shop
+- Product Descriptions
+- Checkout
+- Profile and past order overview
+- Account Logout
+- Leave A Review
+- Reviews
+- Contact Us
+- FAQs page
+- Newsletter sign up page
+
+### Wireframes
+
+The website layout has been planned through the creation of detailed wireframes that outline the desired structure of the Elegant Essentials website. These wireframes serve as a visual guide, illustrating the placement of key elements on all the pages.
+
+All wireframes can be viewed [here](WIREFRAMES.md).
+
+#
