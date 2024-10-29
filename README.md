@@ -138,7 +138,7 @@ This is achieved by using similar styling and colour schemes throughout the webs
 
 ### Website Structure
 
-The website is designed with the user in mind, the goal being to make the website attractive to potential customers. Users that have not signed up /logged in have access to:
+The website is designed with the user in mind, the goal being to make the website attractive to potential customers. Users that have not signed up / logged in have access to:
 - Home
 - Shop 
 - Product Descriptions (unable to add items to basket)
@@ -147,7 +147,7 @@ The website is designed with the user in mind, the goal being to make the websit
 - Reviews
 - Contact Us
 - FAQs page
-- Newsletter sign up page
+- Newsletter sign-up page
 
 Once users are logged in, they have access to:
 - Home
@@ -156,11 +156,11 @@ Once users are logged in, they have access to:
 - Checkout
 - Profile and past order overview
 - Account Logout
-- Leave A Review
+- Leave a Review
 - Reviews
 - Contact Us
 - FAQs page
-- Newsletter sign up page
+- Newsletter sign-up page
 
 ### Wireframes
 
