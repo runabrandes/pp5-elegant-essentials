@@ -13,7 +13,7 @@
 
 When testing this website, please use fictional payment cards.
 
-The cards used for testing purposes were taken from the Stripe website, which is the provider of the payment function that was used when developing this project.
+The cards used for testing purposes were taken from the Stripe website, which is the provider of the payment system that was used when developing this project.
 
 | Card Type | Card Number | Action |
 | ---- | ---- | ---- | 
@@ -21,7 +21,7 @@ The cards used for testing purposes were taken from the Stripe website, which is
 | Generic decline	            | 4000 0025 0000 3155 |	payment successful, authorisation required |
 | Insufficient funds decline	| 4000 0000 0000 9995	| card_declined	| 
 
-When using above cards, please enter a fictional expiry date which must be in the future, as well as a fictional 3-digit CVC and a random 5-digit postal code (numbers only).
+When using above cards, please enter a fictional expiry date which must be in the future (MM/YY), as well as a fictional 3-digit CVC and a random 5-digit postal code (numbers only).
 
 Further test card numbers can be found in the [Stripe docs](https://docs.stripe.com/testing?locale=en-GB).
 
@@ -314,4 +314,9 @@ Search and filter functions are present for the different sections to make navig
 
 #
 
-####
+### Database Schema
+
+A database schema was created for this project's models.
+To create this [Lucidchart](https://lucid.app/documents#/home?folder_id=recent) was used.
+
+![database_schema](documentation/database_diagram.png)
