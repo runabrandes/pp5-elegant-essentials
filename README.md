@@ -280,3 +280,16 @@ Two Google fonts were used:
 - 'Playfair Display'
 - 'Nanum Gothic'
 
+#### Admin panel
+
+The website features a standard Django admin panel. 
+Here, superusers can view information regarding accounts that have been created for the website and add products to the shop and add questions and answers to the FAQ page. <br>
+They can see orders that have been placed by different users, as well as contact requests that might have been made, and read and authorise reviews that were submitted for autorisation. Admins can also see who has signed up to receive the shop's newsletter.
+Search and filter functions are present for the different sections to make navigating around the admin panel seamless.
+
+#### Future Features
+
+- Add a wishlist function so users can save products to a list that they might want to purchase at a later date.
+- Add a live chat function so users can get in touch with the shop faster if they should need help.
+- Add product reviews / ratings so users can immediately see how satisfied other users were with the products offered.
+- Add a product management page so admins can add, edit and delete products without having to access the admin panel.
