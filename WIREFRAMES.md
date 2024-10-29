@@ -1,3 +1,5 @@
+## WIREFRAMES FOR ELEGANT ESSENTIALS
+
 - Wireframes for Home page
 ![wireframes_home](documentation/wireframes/wf_home.png)
 
