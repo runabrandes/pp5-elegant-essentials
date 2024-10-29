@@ -9,6 +9,24 @@
 
 #
 
+## IMPORTANT NOTE
+
+When testing this website, please use fictional payment cards.
+
+The cards used for testing purposes were taken from the Stripe website, which is the provider of the payment function that was used when developing this project.
+
+| Card Type | Card Number | Action |
+| ---- | ---- | ---- | 
+| Valid card | 4242 4242 4242 4242 | payment successful |
+| Generic decline	            | 4000 0025 0000 3155 |	payment successful, authorisation required |
+| Insufficient funds decline	| 4000 0000 0000 9995	| card_declined	| 
+
+When using above cards, please enter a fictional expiry date which must be in the future, as well as a fictional 3-digit CVC and a random 5-digit postal code (numbers only).
+
+Further test card numbers can be found in the [Stripe docs](https://docs.stripe.com/testing?locale=en-GB).
+
+#
+
 ## PROJECT IDEA
 
 My idea for this project stems from my PP4, which I developed a spa website for. I wanted to create a B2C e-commerce project based on a similar idea and have decided on an online beauty shop. 
@@ -224,13 +242,13 @@ When users are happy with their selection of products, they can progress to the 
 
 #### Order Confirmation
 
-Once the user has entered all relevant checkout details and the payment was successful, they are redirected to an order confirmation page which gives them an overview of the products and the quantity of the products they have purchased, as well as their personal information and the total cost of the products they have purchased. 
+Once the user has entered all relevant checkout details and their payment was successful, they are redirected to an order confirmation page which gives them an overview of the products and the quantity of the products they have purchased, as well as their personal information and the total cost of the products they have purchased. 
 
 ![confirmation](documentation/site_pictures/checkout_confirm.png)
 
 #### Profile
 
-On the Profile page, users can view and update their personal information for a faster checkout process, as well as view past orders they have placed. By clicking the order number of past order, they will be redirected to the order confirmation page that would've been generated at the time the order was made.
+On the Profile page, users can view and update their personal information for a faster checkout process, as well as view past orders they have placed. By clicking the order number of a past order, they will be redirected to the order confirmation page that would've been generated at the time the order was made.
 
 ![profile](documentation/site_pictures/profile.png)
 
@@ -242,7 +260,7 @@ The website offers a Contact Us page where users have the possibility to fill in
 
 #### FAQ page
 
-A FAQ page is available to all users, which hold questions and answer to the most frequently asked questions users might have This feature was implemented so users can find help with posible questions quickly rather than having to get in touch with the site owners every time they have a question.
+A FAQ page is available to all users, which hold questions and answer to the most frequently asked questions users might have This feature was implemented so users can find help with possible questions quickly rather than having to wait for a response if not required.
 
 ![faq](documentation/site_pictures/faq.png)
 
@@ -289,7 +307,11 @@ Search and filter functions are present for the different sections to make navig
 
 #### Future Features
 
-- Add a wishlist function so users can save products to a list that they might want to purchase at a later date.
+- Add a wishlist function so users can save products they might want to purchase at a later date.
 - Add a live chat function so users can get in touch with the shop faster if they should need help.
 - Add product reviews / ratings so users can immediately see how satisfied other users were with the products offered.
 - Add a product management page so admins can add, edit and delete products without having to access the admin panel.
+
+#
+
+####
