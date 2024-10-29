@@ -47,7 +47,7 @@ When planning the project the most important features to me were:
 
 ## UX / UI
 
-## OVERVIEW
+### OVERVIEW
 
 - The website was created using Django and features CRUD (Create, Read, Update, Delete) functionality and a user-friendly UI to make buying products from the website sraightforward.
 The overall navigation is easy to use and simple to understand so users can find anything they are looking for quickly.
@@ -320,3 +320,47 @@ A database schema was created for this project's models.
 To create this [Lucidchart](https://lucid.app/documents#/home?folder_id=recent) was used.
 
 ![database_schema](documentation/database_diagram.png)
+
+#
+
+### SEO and Web Marketing Strategy
+
+To find the best Search Engine Optimisation (SEO) keywords I started by brain storming keywords that fit the Elegant Essentials website best. I came up with several one-word as well as phrase keywords for the website:
+
+- Premium haircare 
+- Premium skincare
+- Skincare
+- Haircare
+- Beauty 
+- Beauty products 
+- Sustainable beauty products
+- Beauty gifts 
+- Online beauty shop
+- Natural beauty products 
+- Pampering beauty products
+- Luxury skincare
+- Luxury haircare
+- Rejuvenating serums
+- Hydrating care
+- High quality beauty products 
+
+After the brain storming activity I entered the keywords and phrases into Google and checked what the auto-suggestion function returned. <br>
+These were some of the results:
+
+- Premium haircare - "best premium haircare brands", "premium haircare tips"
+- Premium skincare - "top premium skincare products", "premium skincare routine"
+- Skincare - "skincare tips", "effective products for skin issues"
+- Haircare - "best haircare products", "natural haircare routine"
+- Beauty - "latest beauty trends", "beauty hacks"
+- Beauty products - "best beauty products for oily skin", "affordable beauty products"
+- Sustainable beauty products - "best sustainable beauty brands", "eco-friendly beauty products"
+- Beauty gifts - "popular beauty gifts", "beauty gift sets for her"
+- Online beauty shop - "best online beauty shops", "discount online beauty products"
+- Natural beauty products - "top natural beauty brands", "DIY natural beauty products"
+- Pampering beauty products - "luxurious pampering beauty products", "self-care pampering ideas"
+- Luxury skincare - "top luxury skincare brands", "luxury skincare for aging skin"
+- Luxury haircare - "best luxury haircare products", "luxury haircare routine"
+- Rejuvenating serums - "best rejuvenating serums", "rejuvenating serums for aging skin"
+- Hydrating care - "best hydrating skincare products", "hydrating care for dry skin"
+- High quality beauty products - "high quality beauty products for sensitive skin", "top rated high quality beauty brands"
+
