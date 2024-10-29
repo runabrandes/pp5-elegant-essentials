@@ -325,7 +325,9 @@ To create this [Lucidchart](https://lucid.app/documents#/home?folder_id=recent) 
 
 ### SEO and Web Marketing Strategy
 
-To find the best Search Engine Optimisation (SEO) keywords I started by brain storming keywords that fit the Elegant Essentials website best. I came up with several one-word as well as phrase keywords for the website:
+#### SEO
+
+To find the best Search Engine Optimisation (SEO) keywords I started by brain storming keywords that fit the Elegant Essentials website best. I came up with several keywords as well as keyword phrases for the website:
 
 - Premium haircare 
 - Premium skincare
@@ -364,3 +366,27 @@ These were some of the results:
 - Hydrating care - "best hydrating skincare products", "hydrating care for dry skin"
 - High quality beauty products - "high quality beauty products for sensitive skin", "top rated high quality beauty brands"
 
+I then input the keywords into [wordtracker](wordtracker.com) to check for competition on these keywords and based on the results I chose the following keywords for my wesbite which I included in several section of my website as well as in the `meta` keywords tag:
+
+1. Premium haircare
+2. Luxury skincare
+3. Natural beauty products
+4. Hydrating care
+5. Beauty gifts
+6. Sustainable beauty products
+7. Pampering beauty products
+8. Beauty products
+9. Online beauty shop
+10. High quality beauty products
+11. Rejuvenating serums
+12. Skincare
+13. Haircare
+14. Premium skin care products
+15. Effective products for skin issues
+16. Sustainable products
+17. Luxury skincare for aging skin
+18. Top rated high quality beauty brands
+19. Rejuvenating serums for aging skin
+20. Best luxury haircare products
+
+#### Web Marketing Strategy
