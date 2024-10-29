@@ -196,9 +196,9 @@ An introductory text makes the purpose of the website clear to the users.
 
 #### Shop
 
-In the shop users can see the selection of all products the online store offers. <br>
+In the shop, users can view the selection of all products the online store offers. <br>
 The product cards hold an image, the name of the product as well as the price.
-They can filter products by all products, hair products or skin products and also order all the products in price ascending or price descending.
+Users can filter products by "all products", "hair products" or "skin products" and also order these categories by price ascending or price descending.
 
 ![shop](documentation/site_pictures/shop.png)
 
@@ -212,7 +212,7 @@ The description informs users about uses and benefits of the product they have s
 #### Bag
 
 On the bag page the user can see which products they have currently in their bag and what quantity of the products they have added to their bag.
-The user can also update the quantity of products in their bag as well as fully delete them from the bag. 
+The user can also update the quantity of products in their bag as well as fully delete them. 
 
 ![bag](documentation/site_pictures/bag.png)
 
