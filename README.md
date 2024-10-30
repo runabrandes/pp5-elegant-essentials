@@ -423,7 +423,7 @@ I have decided to include screenshots of the page and have deleted the page off 
 
 ## TESTING 
 
-All testing and bugs hasve been documented in [Testing](TESTING.md)
+All testing and bugs have been documented in [Testing](TESTING.md)
 
 #
 

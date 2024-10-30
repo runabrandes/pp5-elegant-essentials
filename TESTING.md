@@ -248,6 +248,33 @@ Expected:
 Actual:
 - As expected
 
+#
+
+## ACCESSIBILITY
+
+[Wave Accessibility](https://wave.webaim.org/) tool was used for final testing of the deployed website to check for any accessibility errors.
+
+The report can be viewed [here](https://wave.webaim.org/report#/https://elegant-essentials-1b55310ae644.herokuapp.com/).
+
+- No errors were returned for the pages created, apart from a low contrast issue on the Contact Us page concerning the FAQs page link featured in a paragraph. To enhance user experience and make it clear that this is a link to a different page, I have opted not to change its current format.
+
+- The navbar contains a logo that acts as a home button, while there is also a separate 'Home' link present in the navbar, which creates a redundant link alert.
+
+#
+
+## VALIDATOR TESTING
+
+#### HTML
+
+All self-written html files were tested using [W3C HTML Validator](https://validator.w3.org/).
+
+* ![html1](documentation/testing/html_1.png)
+
+* ![html2](documentation/testing/html_2.png)
+
+* ![html4](documentation/testing/html_4.png)
+
+* ![html3](documentation/testing/html_3.png)
 
 
 #
