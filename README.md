@@ -390,3 +390,20 @@ I then input the keywords into [wordtracker](wordtracker.com) to check for compe
 20. Best luxury haircare products
 
 #### Web Marketing Strategy
+
+In order to market the website appropriately so that the shop will have customer engagement from different users, I have come up with a plan that outlines who the most liekly users of the website would be and how we can best reach them and create interest in the wesbite.
+
+**Users**: Our primary users are beauty enthusiasts and individuals seeking premium skincare and haircare solutions, likely aged 18-55. 
+
+**Online Platforms**: They can be found on platforms like Facebook, Instagram and beauty forums where they explore product reviews and trends.
+
+**Social Media**: The users would actively use social media, particularly Instagram, Facebook and perhaps TikTok for the younger audience. 
+
+**User Needs**: They require effective, high-quality products that cater to specific skincare and haircare concerns. We can meet these needs through offering high-quality procuts as well as producing engaging content like skincare routines, and product benefit videos, delivered through social media stories or YouTube video tutorials.
+
+**Sales and Discounts**: Our users would likely respond well to email newsletters or social media announcements to hear about sales and exclusive discounts, adding an element of urgency through limited-time offers. A first time buyer or new newsletter subscriber discount could be added. 
+
+**Business Goals**: Our primary goals are brand awareness, customer loyalty, and increased sales. Leveraging content marketing,  partnerships with relevant influencers and engaging social media campaigns would be best for these goals.
+
+**Advertising Budget**: Whilst having a budget for targeted advertising would be beneficial, we could effectively employ free or low-cost options such as organic social media strategies, collaborations, and engaging in beauty communities to build presence. For the start-up of the company, paid advertisement would be best to allow for fast awareness growth.
+
