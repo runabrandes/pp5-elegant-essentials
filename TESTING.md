@@ -354,7 +354,25 @@ Please see below:
 
 #
 
+## RESPONSIVENESS
 
+Responsiveness has been tested across a few different screen sizes.
+
+- Laptop
+- Tablet
+- Mobile phone
+
+The responsiveness of the elements was good and no issues were noted when testing the website.
+
+The navbar layout can be improved in the future but it is useable and simple to understand.
+
+#
+
+## BROWSER COMPATIBILITY
+
+The following browsers were used to test the site:
+- Google Chrome
+- Safari
 
 # BUGS
 
