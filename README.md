@@ -389,6 +389,7 @@ I then input the keywords into [wordtracker](wordtracker.com) to check for compe
 19. Rejuvenating serums for aging skin
 20. Best luxury haircare products
 
+#
 
 #### Web Marketing Strategy
 
@@ -408,6 +409,7 @@ In order to market the website appropriately so that the shop will have customer
 
 **Advertising Budget**: Whilst having a budget for targeted advertising would be beneficial, we could effectively employ free or low-cost options such as organic social media strategies, collaborations, and engaging in beauty communities to build presence. For the start-up of the company, paid advertisement would be best to allow for fast awareness growth.
 
+#
 
 #### Facebook Business page
 
@@ -512,5 +514,58 @@ App names can only be in lowercase letters, numbers and dashes.
 20. If you choose to `Enable Automatic Deploys`, [Heroku](https://heroku.com/) will build a new version of the app when a change on `gitpod` is pushed to `Github`.  
 21. Manual deployment allows you to update the app whenever you click `Deploy Branch`. For this project, the automatic way was chosen and the branch deployed from is `main`. 
 22. Once the build process is complete you will be able to view the live app by clicking on the `Open app` button.
+
+#
+
+## VERSION CONTROL
+
+These commands were used for version control during development:
+
+- git commit -m "example message" - to commit changes to the local repository
+- git push - to push all committed changes to the GitHub repository
+- git pull - to pull all code into main branch once the feature branch had been merged and deleted
+- git status - to see if the branch currently working on is up to date or if the are any unstaged changes
+- git log --oneline - to see the last commit
+- git commit --amend - to amend the most recent commit message
+
+#
+
+#### How to fork a repository:
+
+If you need to `FORK` a repository:
+
+1. Login in to [GitHub](www.github.com) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
+2. In the top right corner, click `Fork`
+3. The next page will be the forked version of [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials) but in your own repositories
+
+#
+
+#### How to clone a repository:
+
+If you need to make a clone of this repository:
+
+1. Fork the repository [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials) using the steps above
+2. Above the file list, click `Code`
+3. Choose if you want to clone using HTTPS, SSH or GitHub CLI, then click the copy button
+4. Open Git Bash
+5. Change the directory to where you want your clone to go (in your own github)
+6. Type `git clone` and then paste the URL you copied in step 4
+7. Press `Enter` to create your clone
+
+#
+
+#### How to make a local clone:
+
+If you need to make a local clone:
+
+1. Login in to [GitHub](www.github.com) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
+2. Under the repository name, above the list of files, click `Code`
+3. Here you will have two options, `Clone` or `Download` the repository
+4. You should close the repository using HTTPS, clicking on the icon to copy the link
+5. At this point, you can launch the `Gitpod workspace` or choose your own directory
+5. Open Git Bash
+6. Change the current working directory to the new location of where you want the cloned directory to be
+7. Type git clone and then paste the URL you copied in step 4
+8. Press Enter, to create your local clone to your chosen directory
 
 #
