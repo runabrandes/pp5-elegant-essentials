@@ -569,3 +569,19 @@ If you need to make a local clone:
 8. Press Enter, to create your local clone to your chosen directory
 
 #
+
+## CREDITS
+
+- The Code Institute Boutique Ado walkthrough project
+- [W3Schools](https://www.w3schools.com/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Django Documentation](https://docs.djangoproject.com/en/5.0/)
+
+#
+
+## ACKNOWLEDGEMENTS
+
+* My husband Jamie for his support and reassurance during this demanding time!
+* My mentor Rory for being supportive and giving me great advice when I thought I was unable to solve some issues and showing me that sometimes a solution is a lot simpler than I assumed! Thanks for helping me!
+* Tutor Holly at Code Institute I have spoken to when I struggling with setting up AWS! Although it took us a few attempts to get their we were able to solve the issue successfully. Thank you for your help!
+* And lastly, all the creators of the content for Code Institute's Full Stack Developer course. A little over a year ago, I had never even seen written code. With the learning materials you have created I was able to learn things I never thought I would understand!
