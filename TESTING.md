@@ -276,6 +276,22 @@ All self-written html files were tested using [W3C HTML Validator](https://valid
 
 * ![html3](documentation/testing/html_3.png)
 
+2 warnings and 1 error were identified during HTML validator testing. 
+
+- The warnings highlighted were that the `type` attribute is unnecessary for JavaScript resources and there was an empty `h1` heading.
+- The error discovered was raised because of an empty `action` attribute on a `form` element.
+I realised I had forgotten to assign the shop URL to the search bar, but I have since rectified the error.
+
+#
+
+#### CSS
+
+The CSS was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+No errors were found. 
+
+![css_validation](documentation/testing/css_test.png)
+
 
 #
 
