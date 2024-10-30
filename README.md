@@ -460,3 +460,57 @@ All testing and bugs hasve been documented in [Testing](TESTING.md)
 
 A full list of the requirements and the versions used can be found in the requirements.txt file of this project.
 
+To create the requirements.txt file following command was run:<br>
+`pip3 freeze > requirements.txt`
+
+To create a superuser the following command was used: <br>
+`python3 manage.py createsuperuser`
+
+To run the migrations to the database the following commands were used:<br>
+`python3 manage.py makemigrations` <br>
+`python3 manage.py migrate`
+
+To collect the static files for deployment run the following command: <br>
+`python3 manage.py collectstatic`
+
+To view a preview of the project (port 8000) following command was used:
+`python3 manage.py runserver`
+After running the command, port 8000 was selected and opened from the PORTS tab. 
+
+#
+
+
+## DEPLOYMENT 
+
+### Heroku Deployment
+
+IMPORTANT: prior to deploying ensure all dependencies are listed within the requirements.txt file and DEBUG is set to `False`.
+
+Within the terminal in Gitpod Enterprise type `pip3 --local freeze > requirements.txt` and a list with all requirements will be created to be read by Heroku.
+
+
+1. Navigate to [Heroku.com](https://www.heroku.com/) and login (or create a new account).
+2. On the top right hand side, click the `New` button.
+3. Inside the dropdown menu, select `Create new app`.
+4. Create a new name for your app (making sure the name chosen is available) in this case it is `elegant-essentials`. 
+App names can only be in lowercase letters, numbers and dashes.
+5. Select your region, in this case `Europe`.
+6. Click on the `Create App` button.  
+7. This will create your app in Heroku and take you to the dashboard.
+8. Navigate to the settings tab and scroll down to the button `Reveal Config vars`.
+9. Replace the word `KEY` and enter `DATABASE_URL` and then replace the word `VALUE` and enter your personalised URL to the relevant database, then click the `Add` button.
+10. Add a further Config Vars to this project, replace the word `KEY` and enter `SECRET_KEY` and then replace the word `VALUE` and enter your personalised SECRET KEY, then click on the `Add` button.
+11. Follow the steps in point 10 and 11 to add `KEYS` and `VALUES` for `STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_WH_SECRET`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASS`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `USE_AWS`. As above, add all of the mentioned keys into the `KEY` fields and add the relevant values into the `VALUE` field.
+12. Below `Config vars` is `Buildpacks`. Click the `Add Buildpack` button.
+13. In the pop up window, select `python` and save changes.
+14. Next, navigate to the `Deploy` tab at the top left.
+15. Select `Github, 'connect to github'` as the deployment method.
+16. Search for the Github Repository in the search field (in this case `pp5-elegant-essentials`) and click `Search`.
+17. When the search is complete, click `Connect`.
+18. Once your repository is connected to [Heroku](https://heroku.com/), click the `Enable Automatic Deploys` button for automatic deployment.
+19. Alternatively you can manually deploy by selecting a branch to deploy from and clicking `Deploy Branch`. 
+20. If you choose to `Enable Automatic Deploys`, [Heroku](https://heroku.com/) will build a new version of the app when a change on `gitpod` is pushed to `Github`.  
+21. Manual deployment allows you to update the app whenever you click `Deploy Branch`. For this project, the automatic way was chosen and the branch deployed from is `main`. 
+22. Once the build process is complete you will be able to view the live app by clicking on the `Open app` button.
+
+#
