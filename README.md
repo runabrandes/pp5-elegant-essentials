@@ -419,3 +419,44 @@ I have decided to include screenshots of the page and have deleted the page off 
 
 #
 
+## TESTING 
+
+All testing and bugs hasve been documented in [Testing](TESTING.md)
+
+#
+
+## TOOLS USED
+
+- [GitHub](https://github.com/)
+- [Gitpod Enterprise](https://codeinstitute-ide.net/) IDE used for writing the code
+- [Heroku](https://heroku.com/) used for deploying the project
+- [PostgresSQL from Code Institute](https://dbs.ci-dbs.net/)
+- [Balsamiq Wireframes](https://balsamiq.com/wireframes/) for creating wireframes - the desktop version was used
+- [LucidChart](https://www.lucidchart.com/) for creating the Database Schema
+- [Font Awesome](https://fontawesome.com/) for the site's icons
+- [Bootstrap](https://getbootstrap.com/) for the initial styling of of the site
+- [Google Fonts](https://fonts.google.com/) for the typography
+- [Code Institute Pylint](https://pep8ci.herokuapp.com/) for validating the Python code
+- [HTML - W3C HTML Validator](https://validator.w3.org/) for validating the HTML files
+- [CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) for validating the CSS files
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) for debugging the project
+- [W.A.V.E.](https://wave.webaim.org/) for testing accessibility
+- [Chrome LightHouse extension](https://developer.chrome.com/docs/lighthouse/overview/) for testing performance
+- [Amazon Web Services](https://aws.amazon.com/?nc2=h_lg) for storing static folders and media
+- [Pexels](https://www.pexels.com/) for all images used during development of the website
+
+### Python packages used
+
+- [Django](https://www.djangoproject.com/) was used as the framework for the site.
+- [Allauth](https://docs.allauth.org/en/latest/) for the login authentication.
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/) for help styling the forms.
+- [Gunicorn](https://gunicorn.org/) for handling the HTTP requests in production.
+- [Whitenoise](http://whitenoise.evans.io/en/stable/) for deploying the static files to Heroku.
+- [Boto3](https://pypi.org/project/boto3/) for AWS 
+- [Django Storages](https://pypi.org/project/django-storages/) for AWS
+- [Django Countries](https://pypi.org/project/django-countries/) for countires dropdown menu
+- [Pillow](https://pillow.readthedocs.io/en/stable/) for image processing
+- [Stripe](https://docs.stripe.com/) to process payments 
+
+A full list of the requirements and the versions used can be found in the requirements.txt file of this project.
+
