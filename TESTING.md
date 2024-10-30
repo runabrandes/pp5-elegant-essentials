@@ -292,6 +292,26 @@ No errors were found.
 
 ![css_validation](documentation/testing/css_test.png)
 
+#
+
+#### Python Linter
+
+All self-written Python files were tested for the correct PEP8 using the [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+Errors found:
+- Trailing whitespace error
+- Missing new line at end of the file
+- Not enough blank lines between functions
+- The most returned error was E501 - 'line too long' error. <br> I have formatted the lines that were longer than 80 characters to fix this.
+
+![python_error1](documentation/testing/python_errors1.png)
+![python_error2](documentation/testing/python_errors2.png)
+
+All the above have been corrected. No errors for any files were returned at the end of my corrections.
+
+![python_clear](documentation/testing/python_clear.png)
+
+
 
 #
 
