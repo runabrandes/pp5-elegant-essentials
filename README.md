@@ -389,6 +389,7 @@ I then input the keywords into [wordtracker](wordtracker.com) to check for compe
 19. Rejuvenating serums for aging skin
 20. Best luxury haircare products
 
+
 #### Web Marketing Strategy
 
 In order to market the website appropriately so that the shop will have customer engagement from different users, I have come up with a plan that outlines who the most liekly users of the website would be and how we can best reach them and create interest in the wesbite.
@@ -406,4 +407,15 @@ In order to market the website appropriately so that the shop will have customer
 **Business Goals**: Our primary goals are brand awareness, customer loyalty, and increased sales. Leveraging content marketing,  partnerships with relevant influencers and engaging social media campaigns would be best for these goals.
 
 **Advertising Budget**: Whilst having a budget for targeted advertising would be beneficial, we could effectively employ free or low-cost options such as organic social media strategies, collaborations, and engaging in beauty communities to build presence. For the start-up of the company, paid advertisement would be best to allow for fast awareness growth.
+
+
+#### Facebook Business page
+
+A Facebook business page was created for this project. Social media is the fastest way to reach users nowadays.
+I have decided to include screenshots of the page and have deleted the page off Facebook to avoid publishing a page that is meant to be for training purposes.
+
+![fb_1](documentation/facebook/fb_1.png)
+![fb_2](documentation/facebook/fb_2.png)
+
+#
 
