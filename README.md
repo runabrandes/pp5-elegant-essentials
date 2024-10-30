@@ -41,7 +41,6 @@ When planning the project the most important features to me were:
 5. Simple design to allow users to navigate the website seamlessly
 6. Search functionality to help users find products easily
 7. Contact form for customers
-8. Search bar to allow customers to find certain products quickly
 
 #
 
@@ -54,7 +53,7 @@ The overall navigation is easy to use and simple to understand so users can find
 - The user can sign up to the website and when logged in, they can buy products from the shop, leave reviews, as well as edit and delete these.
 All other functionalities (e.g. contacting the store and reading reviews from authorised users) are accessible by all site users not matter if they have an account or not.
 - Logged-in users can see their past orders and default profile (shipping) information.
-The overview of past orders placed has a clickable order number that opens a past order confirmation page, so the user can see where the particular order was shipped to and what phone number was given for the order when it was placed.
+The overview of past orders placed has a clickable order number that opens a past order confirmation page, so the user can see where the particular order was shipped to and which email address / phone number was given for the order and when it was placed.
 - Admin users have extra functionality in the admin panel, being able to search orders by date and username. They can also approve reviews that users have written, so they become visible on the website for everyone to read. Admins can delete orders and user profiles, add questions and answers to the FAQ page and add more products to the website store or delete products if required.
 Furthermore, they can view contact requests that might have been sent to the store.
 
@@ -64,7 +63,7 @@ Furthermore, they can view contact requests that might have been sent to the sto
 
 To plan the User Stories for this project I have created a Kanban board in Github which can be viewed [here](https://github.com/users/runabrandes/projects/4).
 
-**Agile Methodology** was used throughout the project and "issues" moved on the Kanban board according to what was being worked on at the time. As user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress** to **Done**. A row for **Future Implementations** was added as well, which currently holds 3 items, that are not yet implemented but would be beneficial features the website could have in the future.
+**Agile Methodology** was used throughout the project and "issues" moved on the Kanban board according to what was being worked on at the time. As user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress** to **Done**. A row for **Future Implementations** was added as well, which currently holds 4 items, that are not yet implemented but would be beneficial features the website could have in the future.
 **MoSCoW** was also used for this project to help prioritise implementation of features.
 
 #
@@ -84,7 +83,7 @@ To plan the User Stories for this project I have created a Kanban board in Githu
 - Favicon: Add a Favicon logo for brand recognition.
 - Product Listings in Shop: Display inviting images of products, featuring a  description and their cost.
 - Styled Auth Pages: Customise the default allauth pages to reflect the website's overall styling.
-- Home Page: Create an inviting homepage showcasing the shop's introduction so customers knwo what the website offers right away.
+- Home Page: Create an inviting homepage showcasing the shop's introduction so customers know what the website offers right away.
 - Shop Button on Home Page: So users can access the shop immediately and don't have to search for it.
 - Order History: Allow users to view past orders and past information.
 - User Notifications: Display alerts and messages to inform users about statuses of relevant sections.
@@ -94,7 +93,7 @@ To plan the User Stories for this project I have created a Kanban board in Githu
 - Footer: Implement a standard footer on all pages for additional information (privacy policy), newsletter signup link and social media link (Facebook).
 
 #### CRUD
-- CRUD was implemented for the reviews section featured in the Elegant Essentials project
+- CRUD was implemented for the reviews section featured in the Elegant Essentials project.
 - Users that are logged into their existing and verified profile can write reviews. These require to be authorised prior to them being visible to other users. 
 - Logged in users can also update and delete their reviews as desired. 
 - When a user decides to update their review, authorisation by an admin is required again before the updated review is visible to other users. 
@@ -132,9 +131,9 @@ To plan the User Stories for this project I have created a Kanban board in Githu
 #### Simple and Intuitive UX
 
 - Create a responsive navigation bar for easy access to all pages.
-- Develop a footer with social media links and privacy policy and newsletter signup link (button).
-- Focus on inviting design for shop products to make users interested in browsing the shop.
-- Ensure that users receive visual notifications (alerts or redirects to confirmation pages) for all actions they undertake, such as placing orders, signing up to the newsletter, leaving a review.
+- Develop a footer with social media links, privacy policy and newsletter signup link (button).
+- Focus on an inviting design for shop products to make users interested in browsing the shop.
+- Ensure that users receive visual notifications (alerts or redirects to confirmation pages) for all actions they undertake, such as placing orders, signing up to the newsletter or leaving a review.
 - Maintain user orientation throughout their website experience, enhancing usability.
 This is achieved by using similar styling and colour schemes throughout the website. 
 
@@ -207,7 +206,7 @@ It features a link to the Privacy Policy for Elegant Essentials, a social media 
 
 #### Logo, Introduction text and Welcome message
 
-The logo of the website has been designed with a simple, cursive style that gives it a unique look, and it also features a short slogan. When users log in, they see a welcoming message, and if they are not logged in, a message stating "You are not logged in!" appears, making it clear whether they have access to personalised features. This straightforward approach helps users understand their status on the site.
+The logo of the website has been designed with a simple, cursive style that gives it a unique look, and it also features a short slogan. When users log in, they see a welcoming message, and if they are not logged in, a message stating "You are not logged in!" appears, making it clear whether they have access to personalised features. This straightforward approach helps users to understand their status on the site.
 An introductory text makes the purpose of the website clear to the users. 
 
 ![home](documentation/site_pictures/home.png)
@@ -217,6 +216,7 @@ An introductory text makes the purpose of the website clear to the users.
 In the shop, users can view the selection of all products the online store offers. <br>
 The product cards hold an image, the name of the product as well as the price.
 Users can filter products by "all products", "hair products" or "skin products" and also order these categories by price ascending or price descending.
+Users can also use the provided search bar to find certain products quickly.
 
 ![shop](documentation/site_pictures/shop.png)
 
@@ -231,6 +231,7 @@ The description informs users about uses and benefits of the product they have s
 
 On the bag page the user can see which products they have currently in their bag and what quantity of the products they have added to their bag.
 The user can also update the quantity of products in their bag as well as fully delete them. 
+They are also informed of the total cost of their chosen products.
 
 ![bag](documentation/site_pictures/bag.png)
 
@@ -248,7 +249,7 @@ Once the user has entered all relevant checkout details and their payment was su
 
 #### Profile
 
-On the Profile page, users can view and update their personal information for a faster checkout process, as well as view past orders they have placed. By clicking the order number of a past order, they will be redirected to the order confirmation page that would've been generated at the time the order was made.
+On the Profile page, users can view and update their personal information for a faster checkout process, as well as view past orders they have placed. By clicking the order number of a past order, they will be redirected to the order confirmation page that would have been generated at the time the order was made.
 
 ![profile](documentation/site_pictures/profile.png)
 
@@ -260,7 +261,7 @@ The website offers a Contact Us page where users have the possibility to fill in
 
 #### FAQ page
 
-A FAQ page is available to all users, which hold questions and answer to the most frequently asked questions users might have This feature was implemented so users can find help with possible questions quickly rather than having to wait for a response if not required.
+A FAQ page is available to all users, which hold questions and answer to the most frequently asked questions users might have. This feature was implemented so users can find help with possible questions quickly rather than having to wait for a response from the site owner.
 
 ![faq](documentation/site_pictures/faq.png)
 
@@ -302,7 +303,7 @@ Two Google fonts were used:
 
 The website features a standard Django admin panel. 
 Here, superusers can view information regarding accounts that have been created for the website and add products to the shop and add questions and answers to the FAQ page. <br>
-They can see orders that have been placed by different users, as well as contact requests that might have been made, and read and authorise reviews that were submitted for autorisation. Admins can also see who has signed up to receive the shop's newsletter.
+They can see orders that have been placed by different users, as well as contact requests that might have been made, and read and authorise reviews that were submitted for authorisation. Admins can also see who has signed up to receive the shop's newsletter.
 Search and filter functions are present for the different sections to make navigating around the admin panel seamless.
 
 #### Future Features
@@ -366,7 +367,7 @@ These were some of the results:
 - Hydrating care - "best hydrating skincare products", "hydrating care for dry skin"
 - High quality beauty products - "high quality beauty products for sensitive skin", "top rated high quality beauty brands"
 
-I then input the keywords into [wordtracker](wordtracker.com) to check for competition on these keywords and based on the results I chose the following keywords for my wesbite which I included in several section of my website as well as in the `meta` keywords tag:
+I then input the keywords into [wordtracker](https://www.wordtracker.com/) to check for competition on these keywords and based on the results I chose the following keywords for my wesbite which I included in several section of my website as well as in the `meta` keywords tag in my base.html file:
 
 1. Premium haircare
 2. Luxury skincare
@@ -393,7 +394,7 @@ I then input the keywords into [wordtracker](wordtracker.com) to check for compe
 
 #### Web Marketing Strategy
 
-In order to market the website appropriately so that the shop will have customer engagement from different users, I have come up with a plan that outlines who the most liekly users of the website would be and how we can best reach them and create interest in the wesbite.
+In order to market the website appropriately so that the shop will have customer engagement from different users, I have come up with a plan that outlines who the most likely users of the website would be and how we can best reach them and create interest in the wesbite.
 
 **Users**: Our primary users are beauty enthusiasts and individuals seeking premium skincare and haircare solutions, likely aged 18-55. 
 
@@ -534,7 +535,7 @@ These commands were used for version control during development:
 
 If you need to `FORK` a repository:
 
-1. Login in to [GitHub](www.github.com) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
+1. Login in to [GitHub](https://github.com/) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
 2. In the top right corner, click `Fork`
 3. The next page will be the forked version of [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials) but in your own repositories
 
@@ -558,7 +559,7 @@ If you need to make a clone of this repository:
 
 If you need to make a local clone:
 
-1. Login in to [GitHub](www.github.com) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
+1. Login in to [GitHub](https://github.com/) and go to [https://github.com/runabrandes/pp5-elegant-essentials](https://github.com/runabrandes/pp5-elegant-essentials)
 2. Under the repository name, above the list of files, click `Code`
 3. Here you will have two options, `Clone` or `Download` the repository
 4. You should close the repository using HTTPS, clicking on the icon to copy the link
@@ -581,7 +582,7 @@ If you need to make a local clone:
 
 ## ACKNOWLEDGEMENTS
 
-* My husband Jamie for his support and reassurance during this demanding time!
+* My husband Jamie for his support and reassurance during this demanding time! Thanks for being there for me!
 * My mentor Rory for being supportive and giving me great advice when I thought I was unable to solve some issues and showing me that sometimes a solution is a lot simpler than I assumed! Thanks for helping me!
-* Tutor Holly at Code Institute I have spoken to when I struggling with setting up AWS! Although it took us a few attempts to get their we were able to solve the issue successfully. Thank you for your help!
-* And lastly, all the creators of the content for Code Institute's Full Stack Developer course. A little over a year ago, I had never even seen written code. With the learning materials you have created I was able to learn things I never thought I would understand!
+* Tutor Holly at Code Institute I have spoken to when I struggling with setting up AWS! Although it took us a few attempts to get there we were able to solve the issue successfully. Thank you for your help!
+* And lastly, all the creators of the content for Code Institute's Full Stack Developer course. A little over a year ago, I had never seen written code. With the learning materials you have created I was able to learn things I never thought I would understand!

@@ -47,10 +47,10 @@ Actual:
 ### USER STORY: Footer
 
 Description:
-- A footer is on display to the user across all pages
+- A footer is on display to the user across selected pages
 
 Steps:
-1. View all pages
+1. View selected pages
 2. Check footer is on display
 
 Expected:
@@ -71,7 +71,7 @@ Description:
 Steps:
 1. Go to the shop page
 2. Scroll through the selection of products
-3. Click on one of the products cards
+3. Click on one of the product cards
 
 Expected:
 - An overview of offered products is shown
@@ -110,7 +110,7 @@ Description:
 
 Steps:
 1. Click 'Update' button after selecting the new quantity of the relevant product
-2. Click 'Delete' button if product is no longer required
+2. Click 'Remove' button if product is no longer required
 
 Expected:
 - A product's quantity is updated
@@ -141,10 +141,10 @@ Actual:
 ### USER STORY: Order confirmation
 
 Description:
-- A user will be redirected to a order confirmation page after a successful checkout where they will be given an overview of their order as well as their details.
+- A user will be redirected to an order confirmation page after a successful checkout, where they will be given an overview of their order as well as their details.
 
 Steps:
-1. Click 'Complete Order' on bag page when all relevant information was supplied
+1. Click 'Complete Order' on checkout page when all relevant information was supplied
 2. View order confirmation page after successful checkout
 
 Expected:
@@ -158,11 +158,11 @@ Actual:
 ### USER STORY: Leaving reviews
 
 Description:
-- A user that is logged-in can leave reviews for the shop.
+- A user who is logged-in can leave reviews for the shop
 
 Steps:
 1. Click 'Leave A Review' in Navbar
-2. Leave Review
+2. Leave a review
 
 Expected:
 - User is able to submit a review for authorisation when they are logged-in
@@ -173,13 +173,13 @@ Actual:
 ### USER STORY: Updating (previously approved) reviews
 
 Description:
-- A user that is logged-in can update their own reviews for the shop.
+- A user who is logged-in can update their own reviews for the shop.
 They can be updated pre and post approval.
 
 Steps:
 1. Click 'Edit' for a review on the Reviews page when logged-in
 2. Update review
-3. Wait for further approval
+3. Wait for (further) approval
 
 Expected:
 - User is able to edit a review. It will require authorisation once more if it had been approved previously. 
@@ -243,7 +243,7 @@ Steps:
 1. Click 'FAQs' in Navbar
 
 Expected:
-- All users are able to view the shop's FAQ's page
+- All users are able to view the shop's FAQs page
 
 Actual:
 - As expected
@@ -266,7 +266,7 @@ The report can be viewed [here](https://wave.webaim.org/report#/https://elegant-
 
 #### HTML
 
-All self-written html files were tested using [W3C HTML Validator](https://validator.w3.org/).
+All self-written HTML files were tested using [W3C HTML Validator](https://validator.w3.org/).
 
 * ![html1](documentation/testing/html_1.png)
 
@@ -278,9 +278,10 @@ All self-written html files were tested using [W3C HTML Validator](https://valid
 
 2 warnings and 1 error were identified during HTML validator testing. 
 
-- The warnings highlighted were that the `type` attribute is unnecessary for JavaScript resources and there was an empty `h1` heading. The `h1` heading was used to contain the spinner icon, which is displayed when a user completes the checkout process.
+- The warnings highlighted were that the `type` attribute is unnecessary for JavaScript resources and there was an empty `h1` heading. The `h1` heading is used to contain the spinner icon, which is displayed when a user completes the checkout process.
 - The error discovered was raised because of an empty `action` attribute on a `form` element.
 I realised I had forgotten to assign the shop URL to the search bar, but I have since rectified the error.
+- No errors are present in any of the HTML files now.
 
 #
 
@@ -364,7 +365,7 @@ Responsiveness has been tested across a few different screen sizes.
 
 The responsiveness of the elements was good and no issues were noted when testing the website.
 
-The navbar layout can be improved in the future but it is useable and simple to understand.
+The navbar layout can be improved in the future but it is usable and simple to understand.
 
 #
 
@@ -379,15 +380,15 @@ The following browsers were used to test the site:
 A few bugs I have encountered during working on this project were:
 
 * AWS bucket not connecting
-I was unable to connect AWS in a way that would work. The outcome was that the media and static folders would not appear in AWS.
-With the help of a tutor I found the solution, which was to use a different version of Django.
+    - I was unable to connect AWS in a way that would work. The outcome was that the media and static folders would not appear in AWS.
+    With the help of a tutor I found the solution, which was to use a different version of Django.
 
 * Unable to access bag pages (404 error returned)
-I got a 404 error returned during the development process when I tried to implment updating quantites and removing items from the users bag. This was due to me forgetting to add a trailing slash to the end of the relevant URL paths. Once I had corrected this everything worked as expected. 
+    - I got a 404 error returned during the development process when I tried to implment updating quantites and removing items from the users bag. This was due to me forgetting to add a trailing slash to the end of the relevant URL paths. Once I had corrected this everything worked as expected. 
 
 * No account verification email received on personal Gmail account
-When I tested the verification email setup and used my personal Gmail account for this, I did not receive an email to verify my user account. However, when I used temporary email services (such as [Temp Mail](https://temp-mail.org/en/)) the verification emails arrived and worked as expected.
-When mentioning this to my mentor we trialled one of his email accounts and he received an account verification email, but it stated that the email did not pass phishing requirements, which most likely explains the above issue. I have decided to accept this bug for this project as it is unlikely users will sign up using their "real" email accounts for testing purposes.
+    - When I tested the verification email setup and used my personal Gmail account for this, I did not receive an email to verify my user account. However, when I used temporary email services (such as [Temp Mail](https://temp-mail.org/en/)) the verification emails arrived and worked as expected.
+    When mentioning this to my mentor we trialled one of his email accounts and he received an account verification email, but it stated that the email did not pass phishing requirements, which most likely explains the above issue. I have decided to accept this bug for this project as it is unlikely users will sign up using their "real" email accounts for testing purposes.
 
 * Capital letters in image file names
-Capital letters are present in my image file names, as when I uploaded them via the Django admin panel random letters and numbers were auto-generated and added to the original file name. As this is unavoidable, I have accepted this bug.
+    - Capital letters are present in my image file names, as when I uploaded them via the Django admin panel random letters and numbers were auto-generated and added to the original file name. As this is unavoidable, I have accepted this bug.
