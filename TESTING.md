@@ -278,7 +278,7 @@ All self-written html files were tested using [W3C HTML Validator](https://valid
 
 2 warnings and 1 error were identified during HTML validator testing. 
 
-- The warnings highlighted were that the `type` attribute is unnecessary for JavaScript resources and there was an empty `h1` heading.
+- The warnings highlighted were that the `type` attribute is unnecessary for JavaScript resources and there was an empty `h1` heading. The `h1` heading was used to contain the spinner icon, which is displayed when a user completes the checkout process.
 - The error discovered was raised because of an empty `action` attribute on a `form` element.
 I realised I had forgotten to assign the shop URL to the search bar, but I have since rectified the error.
 
@@ -311,9 +311,50 @@ All the above have been corrected. No errors for any files were returned at the 
 
 ![python_clear](documentation/testing/python_clear.png)
 
+#
 
+## LIGHTHOUSE
+
+Lighthouse reports for all pages returned overall satisfactory feedback. 
+
+Please see below:
+
+- Home Page
+![home_lighthouse](documentation/lighthouse/lh_home.png)
+
+- Shop Page
+![shop_lighthouse](documentation/lighthouse/lh_shop.png)
+
+- Product Description Page
+![product_description_lighthouse](documentation/lighthouse/lh_product_description.png)
+
+- Bag Page
+![bag_lighthouse](documentation/lighthouse/lh_bag.png)
+
+- Checkout Page
+![checkout_lighthouse](documentation/lighthouse/lh_checkout.png)
+
+- Checkout Success Page
+![checkout_success_lighthouse](documentation/lighthouse/lh_checkout_success.png)
+
+- Profile Page
+![profile_lighthouse](documentation/lighthouse/lh_profile.png)
+
+- Leave A Review Page
+![leave_review_lighthouse](documentation/lighthouse/lh_leave_review.png)
+
+- Reviews Page
+![reviews_lighthouse](documentation/lighthouse/lh_reviews.png)
+
+- Contact Us Page
+![contact_lighthouse](documentation/lighthouse/lh_contact.png)
+
+- FAQ Page
+![faq_lighthouse](documentation/lighthouse/lh_faq.png)
 
 #
+
+
 
 # BUGS
 
