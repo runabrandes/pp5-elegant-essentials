@@ -18,7 +18,7 @@ The cards used for testing purposes were taken from the Stripe website, which is
 | Card Type | Card Number | Action |
 | ---- | ---- | ---- | 
 | Valid card | 4242 4242 4242 4242 | payment successful |
-| Generic decline	            | 4000 0025 0000 3155 |	payment successful, authorisation required |
+| Authorisation required, valid card	            | 4000 0025 0000 3155 |	payment successful, authorisation required |
 | Insufficient funds decline	| 4000 0000 0000 9995	| card_declined	| 
 
 When using above cards, please enter a fictional expiry date which must be in the future (MM/YY), as well as a fictional 3-digit CVC and a random 5-digit postal code (numbers only).
