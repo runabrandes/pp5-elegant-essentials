@@ -250,3 +250,22 @@ Actual:
 
 
 
+#
+
+# BUGS
+
+A few bugs I have encountered during working on this project were:
+
+* AWS bucket not connecting
+I was unable to connect AWS in a way that would work. The outcome was that the media and static folders would not appear in AWS.
+With the help of a tutor I found the solution, which was to use a different version of Django.
+
+* Unable to access bag pages (404 error returned)
+I got a 404 error returned during the development process when I tried to implment updating quantites and removing items from the users bag. This was due to me forgetting to add a trailing slash to the end of the relevant URL paths. Once I had corrected this everything worked as expected. 
+
+* No account verification email received on personal Gmail account
+When I tested the verification email setup and used my personal Gmail account for this, I did not receive an email to verify my user account. However, when I used temporary email services (such as [Temp Mail](https://temp-mail.org/en/)) the verification emails arrived and worked as expected.
+When mentioning this to my mentor we trialled one of his email accounts and he received an account verification email, but it stated that the email did not pass phishing requirements, which most likely explains the above issue. I have decided to accept this bug for this project as it is unlikely users will sign up using their "real" email accounts for testing purposes.
+
+* Capital letters in image file names
+Capital letters are present in my image file names, as when I uploaded them via the Django admin panel random letters and numbers were auto-generated and added to the original file name. As this is unavoidable, I have accepted this bug.
