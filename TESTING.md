@@ -384,7 +384,7 @@ A few bugs I have encountered during working on this project were:
     With the help of a tutor I found the solution, which was to use a different version of Django.
 
 * Unable to access bag pages (404 error returned)
-    - I got a 404 error returned during the development process when I tried to implment updating quantites and removing items from the users bag. This was due to me forgetting to add a trailing slash to the end of the relevant URL paths. Once I had corrected this everything worked as expected. 
+    - I got a 404 error returned during the development process when I tried to implement updating quantites and removing items from the user's bag. This was due to me forgetting to add a trailing slash to the end of the relevant URL paths. Once I had corrected this, everything worked as expected. 
 
 * No account verification email received on personal Gmail account
     - When I tested the verification email setup and used my personal Gmail account for this, I did not receive an email to verify my user account. However, when I used temporary email services (such as [Temp Mail](https://temp-mail.org/en/)) the verification emails arrived and worked as expected.
